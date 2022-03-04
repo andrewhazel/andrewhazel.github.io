@@ -58,7 +58,7 @@ function valueOfBacElapsed(bacFormObj){
         "Your weight: " + weight + " " + "\n" +
         "Your sex: " + sex + " " + "\n" +
         "Your drinks consumed: " + drinks + " " + "\n" +
-        "Time since last drink: " + time + " hours" + "\n" +
+        "Time since last drink: " + hours + " hours" + "\n" +
         "Your BAC: " + bac + "\n";
     if (bac == 0.0)
         text += "You are currently sober - you do not have alcohol in your bloodstream\n";
