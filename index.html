@@ -1,1 +1,49 @@
-Hello World
+<!DOCTYPE html>
+<!-- index.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bacForm.css">
+    <script src="scripts/bacFormDriver.js"></script>
+    <script src="scripts/bacFormValidate.js"></script>
+    <script src="scripts/bacCalculate.js"></script>
+    <title>Widmark BAC Calculator</title>
+  </head>
+  <body>
+    <main>
+        <h3>Responsible Alcohol Consumption<br>
+          </h3>
+        <p>There are on average 2,300 deaths attributed to alcohol poisoning every year in the U.S</p>
+        <p>Many who consume alcoholic beverages engage in binge drinking, which can dramatically increase
+            the chances of chronic illness such as heart disease, liver disease, or stroke. This website intends to 
+            help provide insight on the reletive BAC content based on individual's consumption of such beverages. Additionally, it is 
+            useful to know what BAC content numbers can mean for the average consumer.
+        </p>
+        <h3>Widmark's Formula</h3>
+        <p>Swedish researcher Erik Widmark divised an equation to determine the <em>maximum</em> BAC content given a person's weight, number of 
+            ounces consumed, and sex. Additionally, the time elapsed since consumption can also be factored in to provide an estimate for how alcohol
+            slowly begins to exit one's bloodstream.
+        </p>
+      <div id="formContent">
+        <h3>Providing the information below can determine your reletive BAC:</h3>
+        <form id="bacForm" onsubmit="bacFormDriver()">
+            <label id="sexLabel">Please choose a sex:</label>
+            <select id="sex" name="sex">
+                <option id="sexMale" value="male">Male</option>
+                <option id="sexFemale" value="female">Female</option>
+            </select>
+            <label id="drinkCountLabel">Enter the number of drinks consumed (e.g. 1 beer, 1 shot, 1 glass of wine is a "drink"):</label>
+            <input id="drinks" type="number"></input>
+            <label id="weightLabel">Please enter your weight in pounds (lbs):</label>
+            <input id="weight" name="weight" type="number"></input>
+            <label id="timeLabel">(Optional) Please enter the time since the last drink was consumed in hours:</label>
+            <input id="time" name="time" type="number"></input>
+            <input id="maxSubmit" type="submit" value="What is my maximum BAC?">What is my maximum BAC?</td>
+            <input id="elapsedSubmit" type="submit" value="What is my maximum BAC?">What is my BAC currently?</td>
+            <input type="reset" value="Reset form"></td>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
+
