@@ -41,7 +41,7 @@ function isWeightValid(weight)
 
 function drinksValid(drinks)
 {
-    if (drinks == "" || isNaN(drink))
+    if (drinks == "" || isNaN(drinks))
     {
         alert("Error: Please input a value for number of drinks.");
         return false;
@@ -56,7 +56,7 @@ function drinksValid(drinks)
 
 function hoursValid(hours)
 {
-    if (hours == "" || isNaN(drink))
+    if (hours == "" || isNaN(hours))
     {
         alert("Alert: No value entered for time, maximum BAC will be calculated.");
         return false;

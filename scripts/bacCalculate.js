@@ -5,7 +5,6 @@
 
 function valueOfBacMax(bacFormObj)
 {
-    console.log('inside Compute func');
     var sex = bacFormObj.sex.
         options[bacFormObj.sex.selectedIndex].text;
     var weight = bacFormObj.weight.value;
