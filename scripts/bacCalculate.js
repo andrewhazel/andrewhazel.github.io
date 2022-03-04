@@ -47,7 +47,7 @@ function valueOfBacElapsed(bacFormObj){
     var sexValue = sex == "Male" ? 0.68 : 0.55
     var bacPercent = (alcoholGrams / (bodyGrams * sexValue)) * 100;
 
-    var bac = bacPercent / (0.015 * hours);
+    var bac = bacPercent - (0.015 * hours);
 
     if(bac < 0.0)
         bac = 0.0;
