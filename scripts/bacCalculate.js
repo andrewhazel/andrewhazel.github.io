@@ -5,6 +5,7 @@
 
 function valueOfBacMax(bacFormObj)
 {
+    console.log('inside Compute func');
     var sex = bacFormObj.sex.
         options[bacFormObj.sex.selectedIndex].text;
     var weight = bacFormObj.weight.value;
@@ -37,6 +38,10 @@ function valueOfBacMax(bacFormObj)
         text += "Death is high possibility... seek immediate medical attention."
     alert(text);
 
+}
+
+function valueOfBacElapsed(bacFormObj){
+    alert('this has yet to be implemented');
 }
 
 
