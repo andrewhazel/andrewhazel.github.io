@@ -39,6 +39,7 @@ function valueOfBacElapsed(bacFormObj){
         options[bacFormObj.sex.selectedIndex].text;
     var weight = bacFormObj.weight.value;
     var drinks = bacFormObj.drinks.value;
+    console.log(sex);
     var sexValue = sex == "Male" ? 3.75 : 4.7
     const elimConstant = 0.017;
     var time = bacFormObj.time.value;
