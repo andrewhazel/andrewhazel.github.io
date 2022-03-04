@@ -3,63 +3,41 @@
 //to one place after the decimal, assuming all data
 //input by the user has been validated
 
-function valueOfBMI(bmiFormObj)
+function valueOfBacmax(bacFormObj)
 {
-    var hUnit = bmiFormObj.heightUnit.
-        options[bmiFormObj.heightUnit.selectedIndex].text;
-    var wUnit = bmiFormObj.weightUnit.
-        options[bmiFormObj.weightUnit.selectedIndex].text;
-    var height = bmiFormObj.height.value;
-    var weight = bmiFormObj.weight.value;
-
-    if (hUnit == "inches") height = inchesToCentimetres(height);
-    if (wUnit == "pounds") weight = poundsToKilograms(weight);
+    var sex = bacFormObj.sex.
+        options[bacFormObj.sex.selectedIndex].text;
+    var weight = bacFormObj.weight.value;
+    var drinks = bacFormObj.drinks.value;
     
-    height /= 100.0; //Convert height from centimeters to meters
-    var bmi = weight/(height*height); //kilograms/(meters*meters)
-    return bmi;
-}
+    var sexValue = sex == "Male" ? 3.75 : 4.7
+    var bac = (drinks * sexValue) / weight;
 
-function inchesToCentimetres(height)
-{
-    var CENTIMETRES_PER_INCH = 2.54;
-    return height * CENTIMETRES_PER_INCH;
-}
-
-function poundsToKilograms(weight)
-{
-    var POUNDS_PER_KILOGRAM = 2.20462;
-    return weight / POUNDS_PER_KILOGRAM;
-}
-
-function valueTo1DecimalPlace(num)
-{
-    var intPortion = Math.floor(num);
-    var decimalPortion = Math.round(num*10)%10;
-    var text = intPortion + "." + decimalPortion;
-    return text;
-}
-
-function displayDetails(bmiFormObj, bmi)
-{
-    var hUnit = bmiFormObj.heightUnit.
-        options[bmiFormObj.heightUnit.selectedIndex].text;
-    var wUnit = bmiFormObj.weightUnit.
-        options[bmiFormObj.weightUnit.selectedIndex].text;
-    var height = bmiFormObj.height.value;
-    var weight = bmiFormObj.weight.value;
-    var text = "BMI Report\n" +
-        "Your weight: " + weight + " " + wUnit + "\n" +
-        "Your height: " + height + " " + hUnit + "\n" +
-        "Your BMI: " + valueTo1DecimalPlace(bmi) + "\n";
-    if (bmi < 18.5)
-        text += "Your BMI suggests that you are underweight.\n";
-    else if (bmi < 25)
-        text += "Your BMI suggests that you have a reasonable weight.\n";
-    else if (bmi < 29)
-        text += "Your BMI suggests that you may be overweight.\n";
+    var text = "BAC Report\n" +
+        "Your weight: " + weight + " " + "\n" +
+        "Your sex: " + sex + " " + "\n" +
+        "Your drinks consumed: " + drinks + " " + "\n" +
+        "Your BAC: " + bac + "\n";
+    if (bac < 0.04 && bac > 0.00)
+        text += "No apparent effects are felt with this BAC. May experience elevated mood\n";
+    else if (bac >= 0.04 && bac < 0.07)
+        text += "May feel warm and relaxed - slight impairment in speech and memory.\n";
+    else if (bac >= 0.08 && bac < 0.10)
+        text += "Mild impairment of balance, speech, vision, and control. You are unable to legally operate a motor vehicle.\n";
+    else if (bac >= 0.10 && bac < 0.13)
+        text += "Loss of judgement and moderate loss of motor control.\n";
+    else if (bac >= 0.13 && bac < 0.16)
+        text += "Blurred vision and major loss of balance. May feel anxious or restless.\n";
+    else if (bac >= 0.16 && bac < 0.20)
+        text += "Nausea is apparent - you may be considered 'sloppy drunk'.\n";
+    else if (bac >= 0.20 && bac < 0.35)
+        text += "Severe Intoxication - you may need help walking.\n";
+    else if (bac >= 0.35 && bac < 0.40)
+        text += "Brink of comatose.\n";
     else
-        text += "Your BMI suggests that you may be obese.\n";
+        text += "Death is high possibility... seek immediate medical attention."
     alert(text);
+
 }
+
 

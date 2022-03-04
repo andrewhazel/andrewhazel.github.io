@@ -4,42 +4,27 @@ function bacFormValidate(bacFormObj)
         options[bacFormObj.sex.selectedIndex].text;
     var weight = bacFormObj.weight.value;
     var drinks = bacFormObj.drinks.value;
-    var validWeight, validSex, validDrinks, validTime;
+    var validWeight, validSex, validDrinks;
 
-    return heightOK && weightOK && emailOK;
+    validSex = isSexValid(sex);
+    validWeight = isWeightValid(weight);
+    validDrinks = drinksValid(drinks);
+
+    return validSex && validWeight && validDrinks;
 }
 
-function inchesValid(height)
+function isSexValid(sex)
 {
-    if (height == "" || isNaN(height))
+    if (sex == "")
     {
-        alert("Error: Please input a number for height.");
-        return false;
-    }
-    if (height < 0 || height > 100)
-    {
-        alert("Error: Height must be in the range 0-100 inches.");
+        alert("Error: Please select an option for sex.");
         return false;
     }
     return true;
 }
 
-function centimetresValid(height)
-{
-    if (height == "" || isNaN(height))
-    {
-        alert("Error: Please input a number for height.");
-        return false;
-    }
-    if (height < 0 || height > 300)
-    {
-        alert("Error: Height must be in the range 0-300 centimeters.");
-        return false;
-    }
-    return true;
-}
 
-function poundsValid(weight)
+function isWeightValid(weight)
 {
     if (weight == "" || isNaN(weight))
     {
@@ -54,30 +39,33 @@ function poundsValid(weight)
     return true;
 }
 
-function kilogramsValid(weight)
+function drinksValid(drinks)
 {
-    if (weight == "" || isNaN(weight))
+    if (drinks == "" || isNaN(drink))
     {
-        alert("Error: Please input a number for weight.");
+        alert("Error: Please input a value for number of drinks.");
         return false;
     }
-    if (weight <= 0 || weight > 500)
+    if (drinks <= 0 || drinks > 50)
     {
-        alert("Error: Weight must be in the range 0-500 kilograms.");
+        alert("Error: Drinks must be in the range 0-50.");
         return false;
     }
     return true;
 }
 
-function emailValid(address)
+function hoursValid(hours)
 {
-    var p = address.search(/.+@.+/);
-    if (p == 0)
-        return true;
-    else
+    if (hours == "" || isNaN(drink))
     {
-        alert("Error: Invalid e-mail address.");
+        alert("Alert: No value entered for time, maximum BAC will be calculated.");
         return false;
     }
+    if (hours <= 0 || hours > 50)
+    {
+        alert("Error: Hours must be in the range 0-50, maximum BAC will be calculated.");
+        return false;
+    }
+    return true;
 }
 

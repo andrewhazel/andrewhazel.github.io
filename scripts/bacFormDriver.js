@@ -3,10 +3,10 @@ function bacFormDriver()
     var bacFormObj = document.getElementById("bacForm");
     if (bacFormValidate(bacFormObj))
     {
-        var bmi = valueOfBMI(bmiFormObj);
-        if (bmiFormObj.details.checked)
-            displayDetails(bmiFormObj, bmi);
-        else
-            alert("Your BMI: " + valueTo1DecimalPlace(bmi));
+        if(hoursValid(backFormObj.hours.value)){
+            valueOfBacElapsed(bacFormObj);
+        }else{
+            valueOfBacMax(bacFormObj);
+        }
     }
 }
