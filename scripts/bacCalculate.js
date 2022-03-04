@@ -42,7 +42,7 @@ function valueOfBacElapsed(bacFormObj){
     var sexValue = sex == "Male" ? 3.75 : 4.7
     const elimConstant = 0.017;
     var time = bacFormObj.time.value;
-    var bac = ((drinks * sexValue) - (elimConstant * time)) / weight;
+    var bac = ((drinks * sexValue) / weight) - (elimConstant * time);
 
     if(bac < 0.0)
         bac = 0.0;
