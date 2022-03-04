@@ -3,13 +3,12 @@
 //to one place after the decimal, assuming all data
 //input by the user has been validated
 
-function valueOfBacmax(bacFormObj)
+function valueOfBacMax(bacFormObj)
 {
     var sex = bacFormObj.sex.
         options[bacFormObj.sex.selectedIndex].text;
     var weight = bacFormObj.weight.value;
     var drinks = bacFormObj.drinks.value;
-    
     var sexValue = sex == "Male" ? 3.75 : 4.7
     var bac = (drinks * sexValue) / weight;
 
