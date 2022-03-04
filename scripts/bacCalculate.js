@@ -4,8 +4,10 @@ function valueOfBacMax(bacFormObj)
         options[bacFormObj.sex.selectedIndex].text;
     var weight = bacFormObj.weight.value;
     var drinks = bacFormObj.drinks.value;
-    var sexValue = sex == "Male" ? 3.75 : 4.7
-    var bac = (drinks * sexValue) / weight;
+    var alcoholGrams = drinks * 14;
+    var bodyGrams = weight * 454;
+    var sexValue = sex == "Male" ? 0.68 : 0.55
+    var bac = (alcoholGrams / (bodyGrams * sexValue)) * 100;
 
     var text = "BAC Report\n" +
         "Your weight: " + weight + " " + "\n" +
@@ -39,11 +41,13 @@ function valueOfBacElapsed(bacFormObj){
         options[bacFormObj.sex.selectedIndex].text;
     var weight = bacFormObj.weight.value;
     var drinks = bacFormObj.drinks.value;
-    console.log(sex);
-    var sexValue = sex == "Male" ? 3.75 : 4.7
-    const elimConstant = 0.017;
-    var time = bacFormObj.time.value;
-    var bac = ((drinks * sexValue) / weight) - (elimConstant * time);
+    var hours = bacFormObj.time.value;
+    var alcoholGrams = drinks * 14;
+    var bodyGrams = weight * 454;
+    var sexValue = sex == "Male" ? 0.68 : 0.55
+    var bacPercent = (alcoholGrams / (bodyGrams * sexValue)) * 100;
+
+    var bac = bacPercent / (0.015 * hours);
 
     if(bac < 0.0)
         bac = 0.0;
