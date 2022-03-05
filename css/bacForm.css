@@ -23,27 +23,27 @@ textarea.standard {
 textarea.mildBac {
     background-color: #90d28c;
     border: 2px solid black;
-    height: 50%;
+    height: 200px;
     width: 70%;
 }
 
 textarea.moderateBac {
     background-color: #D2d69a;
     border: 2px solid black;
-    height: 50%;
+    height: 200px;
     width: 70%;
 }
 
 textarea.severeBac {
     background-color: #F5c480;
     border: 2px solid black;
-    height: 50%;
+    height: 200px;
     width: 70%;
 }
 
 textarea.dangerousBac {
     background-color: #Ef9e93;
     border: 2px solid black;
-    height: 50%;
+    height: 200px;
     width: 70%;
 }
