@@ -32,7 +32,7 @@
         <p classname="bold">BAC = [Alcohol consumed in grams / (Body weight in grams x R)] X 100</p>
       <div id="formContent">
         <h3>Providing the information below can determine your relative BAC:</h3>
-        <form id="bacForm" onsubmit="bacFormDriver()">
+        <form id="bacForm" onsubmit="bacFormDriver(); return false">
             <label id="sexLabel">Please choose a sex:</label>
             <select id="sex" name="sex">
                 <option id="sexMale" value="male">Male</option>

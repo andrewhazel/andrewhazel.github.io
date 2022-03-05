@@ -15,17 +15,17 @@ textarea.standard {
 }
 
 textarea.mildBac {
-    color: #90d28c;
+    background-color: #90d28c;
 }
 
 textarea.moderateBac {
-    color: #D2d69a;
+    background-color: #D2d69a;
 }
 
 textarea.severeBac {
-    color: #F5c480;
+    background-color: #F5c480;
 }
 
 textarea.dangerousBac {
-    color: #Ef9e93;
+    background-color: #Ef9e93;
 }
