@@ -33,7 +33,7 @@ function bacFormDriver()
             
             textArea.value = text;
             textArea.className = css;
-            bacLabel.value = bacRec;
+            bacLabel.innerHTML = bacRec;
         }else{
             var bac = valueOfBacMax(bacFormObj);
             var css = determineCSS(bac);
@@ -62,7 +62,7 @@ function bacFormDriver()
             
             textArea.value = bacText;
             textArea.className = css;
-            bacLabel.value = bacRec;
+            bacLabel.innerHTML = bacRec;
         }
     }
 }
