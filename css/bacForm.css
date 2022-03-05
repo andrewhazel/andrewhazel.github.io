@@ -10,37 +10,40 @@ p.bold {
     border: 3px solid black;
 }
 
+.results-section{
+    display: inline-flex;
+}
 
 textarea.standard {
     border: 2px solid black;
     height: 50%;
-    width: 30%;
+    width: 70%;
 }
 
 textarea.mildBac {
     background-color: #90d28c;
     border: 2px solid black;
     height: 50%;
-    width: 30%;
+    width: 70%;
 }
 
 textarea.moderateBac {
     background-color: #D2d69a;
     border: 2px solid black;
-    height: 200px;
-    width: 100px;
+    height: 50%;
+    width: 70%;
 }
 
 textarea.severeBac {
     background-color: #F5c480;
     border: 2px solid black;
     height: 50%;
-    width: 30%;
+    width: 70%;
 }
 
 textarea.dangerousBac {
     background-color: #Ef9e93;
     border: 2px solid black;
     height: 50%;
-    width: 30%;
+    width: 70%;
 }
