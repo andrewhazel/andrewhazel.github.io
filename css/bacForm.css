@@ -5,3 +5,23 @@ hr.solid {
 p.bold {
     font-weight: bold;
 }
+
+.results{
+    border: 3px;
+}
+
+textarea.mildBac {
+    color: #90d28c;
+}
+
+textarea.moderateBac {
+    color: #D2d69a;
+}
+
+textarea.severeBac {
+    color: #F5c480;
+}
+
+textarea.dangerousBac {
+    color: #Ef9e93;
+}
