@@ -12,9 +12,6 @@ p.bold {
 
 .results{
     display: inline-block;
-}
-
-.results-section{
     border: 3px solid black;
 }
 
