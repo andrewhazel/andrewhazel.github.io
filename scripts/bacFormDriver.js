@@ -9,7 +9,7 @@ function bacFormDriver()
             var bac = valueOfBacElapsed(bacFormObj);
             var css = determineCSS(bac);
             var bacText = "Your BAC: " + bac + "\n";
-            var bacRec = '';
+            let bacRec = '';
             if (bac == 0.0)
                 bacRec += "You are currently sober - you do not have alcohol in your bloodstream\n";
             else if (bac < 0.04 && bac > 0.00)
@@ -31,7 +31,7 @@ function bacFormDriver()
             else
                 bacRec += "Death is high possibility... seek immediate medical attention."
             
-            textArea.value = text;
+            textArea.value = bacText;
             textArea.className = css;
             bacLabel.innerHTML = bacRec;
         }else{
