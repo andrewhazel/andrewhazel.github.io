@@ -6,13 +6,16 @@ p.bold {
     font-weight: bold;
 }
 
+.result-padding-block{
+    display: inline-block;
+}
+
 .results{
-    border: 3px solid black;
+    display: inline-block;
 }
 
 .results-section{
-    display: inline-flex;
-    height: 10vh;
+    border: 3px solid black;
 }
 
 textarea.standard {
