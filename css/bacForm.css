@@ -7,48 +7,45 @@ p.bold {
 }
 
 .results-wrapper {
-    height: 15vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
 
 .result-padding-block{
-    display: inline-block;
+    width: 25%;
 }
 
 .results{
+    width: 50%;
     display: inline-block;
     border: 3px solid black;
 }
 
 textarea.standard {
     border: 2px solid black;
-    height: 90%;
-    width: 100%;
+
 }
 
 textarea.mildBac {
     background-color: #90d28c;
     border: 2px solid black;
-    height: 90%;
-    width: 100%;
+
 }
 
 textarea.moderateBac {
     background-color: #D2d69a;
     border: 2px solid black;
-    height: 90%;
-    width: 100%;
+ 
 }
 
 textarea.severeBac {
     background-color: #F5c480;
     border: 2px solid black;
-    height: 90%;
-    width: 100%;
+
 }
 
 textarea.dangerousBac {
     background-color: #Ef9e93;
     border: 2px solid black;
-    height: 90%;
-    width: 100%;
 }
