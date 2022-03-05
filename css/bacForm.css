@@ -3,17 +3,17 @@ hr.solid {
 }
 
 body {
-    background-color: lightblue;
+    background-color: blue;
 }
 
-#footer{
+footer{
     display: table;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-#header{
+header{
     display: table;
     text-align: center;
     margin-left: auto;
