@@ -6,6 +6,10 @@ p.bold {
     font-weight: bold;
 }
 
+.results-wrapper {
+    height: 15vh;
+}
+
 .result-padding-block{
     display: inline-block;
 }
