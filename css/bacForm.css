@@ -12,20 +12,30 @@ p.bold {
 
 textarea.standard {
     border: 2px;
+    height: auto;
+    width: 100%;
 }
 
 textarea.mildBac {
     background-color: #90d28c;
+    height: auto;
+    width: 100%;
 }
 
 textarea.moderateBac {
     background-color: #D2d69a;
+    height: auto;
+    width: 100%;
 }
 
 textarea.severeBac {
     background-color: #F5c480;
+    height: auto;
+    width: 100%;
 }
 
 textarea.dangerousBac {
     background-color: #Ef9e93;
+    height: auto;
+    width: 100%;
 }
