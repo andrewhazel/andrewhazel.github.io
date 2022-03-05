@@ -3,7 +3,7 @@ hr.solid {
 }
 
 body {
-    background-color: blue;
+    background-color: #B3afaf;
 }
 
 footer{
@@ -46,6 +46,7 @@ p.bold {
     width: 50%;
     display: inline-block;
     border: 3px solid black;
+    background-color: white;
 }
 
 textarea.standard {
