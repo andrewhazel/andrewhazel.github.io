@@ -10,6 +10,10 @@ p.bold {
     border: 3px;
 }
 
+textarea.standard {
+    border: 2px;
+}
+
 textarea.mildBac {
     color: #90d28c;
 }

@@ -3,18 +3,16 @@ function bacFormDriver()
     var bacFormObj = document.getElementById("bacForm");
     if (bacFormValidate(bacFormObj))
     {
-        let textArea = document.getElementById("resultsArea");
+        var textArea = document.getElementById("resultsArea");
         var sex = bacFormObj.sex.
             options[bacFormObj.sex.selectedIndex].text;
         var weight = bacFormObj.weight.value;
         var drinks = bacFormObj.drinks.value;
-        let text = '';
-        let css = '';
         if(hoursValid(bacFormObj.time.value)){
-            let bac = valueOfBacElapsed(bacFormObj);
-            css = determineCSS(bac);
-            let hours = bacFormObj.time.value;
-            text = "BAC Report\n" +
+            var bac = valueOfBacElapsed(bacFormObj);
+            var css = determineCSS(bac);
+            var hours = bacFormObj.time.value;
+            var text = "BAC Report\n" +
             "Your weight: " + weight + " " + "\n" +
             "Your sex: " + sex + " " + "\n" +
             "Your drinks consumed: " + drinks + " " + "\n" +
@@ -40,10 +38,13 @@ function bacFormDriver()
                 text += "Brink of comatose.\n";
             else
                 text += "Death is high possibility... seek immediate medical attention."
+            
+            textArea.value = text;
+            textArea.className = css;
         }else{
-            let bac = valueOfBacMax(bacFormObj);
-            css = determineCSS(bac);
-            text = "BAC Report\n" +
+            var bac = valueOfBacMax(bacFormObj);
+            var css = determineCSS(bac);
+            var text = "BAC Report\n" +
             "Your weight: " + weight + " " + "\n" +
             "Your sex: " + sex + " " + "\n" +
             "Your drinks consumed: " + drinks + " " + "\n" +
@@ -68,8 +69,9 @@ function bacFormDriver()
                 text += "Brink of comatose.\n";
             else
                 text += "Death is high possibility... seek immediate medical attention."
+            
+            textArea.value = text;
+            textArea.className = css;
         }
-        textArea.value = text;
-        textArea.className = css;
     }
 }
