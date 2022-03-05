@@ -15,50 +15,55 @@
           <h2>BAC Calculator and Resources</h2>
       </header>
       <hr class="solid" />
-        <h3>Responsible Alcohol Consumption<br>
-          </h3>
         <div class="results-wrapper">
           <div id="padding-left-block" class="results-padding-block"></div>
           <div id="results" class="results">
-              <p>There are on average 2,300 deaths attributed to alcohol poisoning every year in the U.S</p>
-              <p>Many who consume alcoholic beverages engage in binge drinking, which can dramatically increase
-                the chances of chronic illness such as heart disease, liver disease, or stroke. This website intends to 
-                help provide insight on the relative BAC content based on individual's consumption of such beverages. Additionally, it is 
-                useful to know what BAC content numbers can mean for the average consumer.
-              </p>
-              <h3>Widmark's Formula</h3>
-              <p>Swedish researcher Erik Widmark divised an equation to determine the <em>maximum</em> BAC content given a person's weight, number of 
-                ounces consumed, and sex. Additionally, the time elapsed since consumption can also be factored in to provide an estimate for how alcohol
-                slowly begins to exit one's bloodstream.
-              </p>
-              <h4>The equation used in calculations is:</h4>
-              <p class="bold">BAC = [Alcohol consumed in grams / (Body weight in grams x R)] X 100</p>
-              <div id="formContent">
-                <h3>Providing the information below can determine your relative BAC:</h3>
-                <form id="bacForm" onsubmit="bacFormDriver();return false">
-                    <label id="sexLabel">Please choose a sex:</label>
-                    <select id="sex" name="sex">
-                        <option id="sexMale" value="male">Male</option>
-                        <option id="sexFemale" value="female">Female</option>
-                    </select>
-                    <br/>
-                    <label id="drinkCountLabel">Enter the number of drinks consumed (e.g. 1 beer, 1 shot, 1 glass of wine is a "drink"):</label>
-                    <input id="drinks" type="number"></input>
-                    <br/>
-                    <label id="weightLabel">Please enter your weight in pounds (lbs):</label>
-                    <input id="weight" name="weight" type="number"></input>
-                    <br/>
-                    <label id="timeLabel">(Optional) Please enter the time since the last drink was consumed in hours:</label>
-                    <input id="time" name="time" step="any" type="number"></input>
-                    <br/>
-                    <input id="submit" type="submit" value="What is my BAC?"></td>
-                    <input type="reset" value="Reset form"></td>
-                </form>
-              </div>
-              <textarea id="resultsArea" value="" class="standard"></textarea>
+            h3>Responsible Alcohol Consumption<br>
+          </h3>
+            <p>There are on average 2,300 deaths attributed to alcohol poisoning every year in the U.S</p>
+            <p>Many who consume alcoholic beverages engage in binge drinking, which can dramatically increase
+              the chances of chronic illness such as heart disease, liver disease, or stroke. This website intends to 
+              help provide insight on the relative BAC content based on individual's consumption of such beverages. Additionally, it is 
+              useful to know what BAC content numbers can mean for the average consumer.
+            </p>
+            <h3>Widmark's Formula</h3>
+            <p>Swedish researcher Erik Widmark divised an equation to determine the <em>maximum</em> BAC content given a person's weight, number of 
+              ounces consumed, and sex. Additionally, the time elapsed since consumption can also be factored in to provide an estimate for how alcohol
+              slowly begins to exit one's bloodstream.
+             </p>
+            <h4>The equation used in calculations is:</h4>
+            <p class="bold">BAC = [Alcohol consumed in grams / (Body weight in grams x R)] X 100</p>
+            <div id="formContent">
+              <h3>Providing the information below can determine your relative BAC:</h3>
+              <form id="bacForm" onsubmit="bacFormDriver();return false">
+                  <label id="sexLabel">Please choose a sex:</label>
+                  <select id="sex" name="sex">
+                      <option id="sexMale" value="male">Male</option>
+                      <option id="sexFemale" value="female">Female</option>
+                  </select>
+                  <br/>
+                  <label id="drinkCountLabel">Enter the number of drinks consumed (e.g. 1 beer, 1 shot, 1 glass of wine is a "drink"):</label>
+                  <input id="drinks" type="number"></input>
+                  <br/>
+                  <label id="weightLabel">Please enter your weight in pounds (lbs):</label>
+                  <input id="weight" name="weight" type="number"></input>
+                  <br/>
+                  <label id="timeLabel">(Optional) Please enter the time since the last drink was consumed in hours:</label>
+                  <input id="time" name="time" step="any" type="number"></input>
+                  <br/>
+                  <input id="submit" type="submit" value="What is my BAC?"></td>
+                  <input type="reset" value="Reset form"></td>
+              </form>
             </div>
-          <div id="padding-right-block" class="results-padding-block"></div>
-        </div>
+            <textarea id="resultsArea" value="" class="standard"></textarea>
+          </div>
+      </div>
+      <hr class="solid"/>
+      <footer>
+        <h3>Resources for you to access:</h3>
+        <a href="pages/help.html">Get Help Now</a>
+        <a href="pages/about.html">About Us</a>
+      </footer>
     </main>
   </body>
 </html>
