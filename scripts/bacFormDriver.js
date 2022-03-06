@@ -45,7 +45,7 @@ function bacFormDriver()
                 bacRec += "No apparent effects are felt with this BAC. May experience elevated mood\n";
             else if (bac >= 0.04 && bac < 0.07)
                 bacRec += "May feel warm and relaxed - slight impairment in speech and memory.\n";
-            else if (bac >= 0.08 && bac < 0.10)
+            else if (bac >= 0.07 && bac < 0.10)
                 bacRec += "Mild impairment of balance, speech, vision, and control. You are unable to legally operate a motor vehicle.\n";
             else if (bac >= 0.10 && bac < 0.13)
                 bacRec += "Loss of judgement and moderate loss of motor control.\n";
