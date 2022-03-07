@@ -69,7 +69,7 @@ form {
 }
 
 .results-padding-block-form{
-    width: 25%;
+    width: 12.5%;
 }
 
 .results{
@@ -86,7 +86,7 @@ form {
 }
 
 .results-form{
-    width: 50%;
+    width: 75%;
     display: inline-block;
     border: 3px solid black;
     background-color: white;
