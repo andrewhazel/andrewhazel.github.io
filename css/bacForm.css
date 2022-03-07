@@ -52,11 +52,17 @@ p.bold {
 
 form {
     overflow: hidden;
-  }
-  input {
+}
+
+input {
     float: right;
     clear: both;
-  }
+}
+
+select {
+    float: right;
+    clear: both;
+}
 
 .results-wrapper {
     height: 100%;
@@ -69,7 +75,7 @@ form {
 }
 
 .results-padding-block-form{
-    width: 12.5%;
+    width: 10%;
 }
 
 .results{
@@ -80,13 +86,13 @@ form {
 }
 
 .results-wrapper-form {
-    height: 35%;
+    height: 40%;
     width: 100%;
     display: flex;
 }
 
 .results-form{
-    width: 75%;
+    width: 80%;
     display: inline-block;
     border: 3px solid black;
     background-color: white;
