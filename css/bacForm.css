@@ -67,7 +67,7 @@ label {
 }
 
 .results-padding-block-form{
-    width: 12.5%;
+    width: 25%;
 }
 
 .results{
@@ -78,8 +78,8 @@ label {
 }
 
 .results-wrapper-form {
-    height: 40%;
-    width: 25%;
+    height: 38%;
+    width: 100%;
     display: flex;
 }
 
