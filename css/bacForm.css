@@ -41,7 +41,19 @@ h4 {
 }
 
 p.bold {
+    text-align: center;
     font-weight: bold;
+}
+
+label {
+    display:block; 
+    width: 50%; 
+    height: 50%; 
+    text-align:right
+}
+
+.form-buttons {
+    float: right;
 }
 
 .results-wrapper {
@@ -54,6 +66,10 @@ p.bold {
     width: 25%;
 }
 
+.results-padding-block-form{
+    width: 12.5%;
+}
+
 .results{
     width: 50%;
     display: inline-block;
@@ -63,37 +79,43 @@ p.bold {
 
 .results-wrapper-form {
     height: 40%;
-    width: 100%;
+    width: 25%;
     display: flex;
 }
 
 .results-form{
     width: 50%;
     display: inline-block;
+    border: 3px solid black;
     background-color: white;
 }
 
 textarea.standard {
     border: 2px solid black;
+    float: right;
 
 }
 
 textarea.mildBac {
     background-color: #90d28c;
     border: 2px solid black;
+    float: right;
 }
 
 textarea.moderateBac {
     background-color: #D2d69a;
     border: 2px solid black;
+    float: right;
 }
 
 textarea.severeBac {
     background-color: #F5c480;
     border: 2px solid black;
+    float: right;
 }
 
 textarea.dangerousBac {
     background-color: #Ef9e93;
     border: 2px solid black;
+    float: right;
 }
