@@ -45,12 +45,6 @@ p.bold {
     font-weight: bold;
 }
 
-label {
-    display:block; 
-    width: 50%; 
-    height: 50%; 
-    text-align:right
-}
 
 .form-buttons {
     float: right;
@@ -78,7 +72,7 @@ label {
 }
 
 .results-wrapper-form {
-    height: 50%;
+    height: 48%;
     width: 100%;
     display: flex;
 }
