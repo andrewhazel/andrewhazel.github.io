@@ -6,6 +6,10 @@ body {
     background-color: #B3afaf;
 }
 
+p {
+    text-align: justify;
+}
+
 footer{
     display: table;
     text-align: center;
