@@ -34,30 +34,36 @@
             <h4>The equation used in calculations is:</h4>
             <p class="bold">BAC = [Alcohol consumed in grams / (Body weight in grams x R)] X 100 (where R represents a sex-based constant)</p>
             <p><em>Note: BAC can vary based on consumption frequency. Such numbers are estimates and not 100% accurate.</em></p>
-            <div id="formContent">
-              <h3>Providing the information below can determine your relative BAC:</h3>
-              <form id="bacForm" onsubmit="bacFormDriver();return false">
-                  <label id="sexLabel">Please choose a sex:</label>
-                  <select id="sex" name="sex">
-                      <option id="sexMale" value="male">Male</option>
-                      <option id="sexFemale" value="female">Female</option>
-                  </select>
-                  <br/>
-                  <label id="drinkCountLabel">Enter the number of drinks consumed (e.g. 1 beer, 1 shot, 1 glass of wine is a "drink"):</label>
-                  <input id="drinks" type="number"></input>
-                  <br/>
-                  <label id="weightLabel">Please enter your weight in pounds (lbs):</label>
-                  <input id="weight" name="weight" type="number"></input>
-                  <br/>
-                  <label id="timeLabel">(Optional) Please enter the time since the last drink was consumed in hours:</label>
-                  <input id="time" name="time" step="any" type="number"></input>
-                  <br/>
-                  <input id="submit" type="submit" value="What is my BAC?"></td>
-                  <input type="reset" value="Reset form"></td>
-              </form>
+            <div class="results-wrapper">
+              <div id="padding-left-block" class="results-padding-block"></div>
+              <div class="results">
+                <div id="formContent">
+                  <h3>Providing the information below can determine your relative BAC:</h3>
+                  <form id="bacForm" onsubmit="bacFormDriver();return false">
+                      <label id="sexLabel">Please choose a sex:</label>
+                      <select id="sex" name="sex">
+                          <option id="sexMale" value="male">Male</option>
+                          <option id="sexFemale" value="female">Female</option>
+                      </select>
+                      <br/>
+                      <label id="drinkCountLabel">Enter the number of drinks consumed (e.g. 1 beer, 1 shot, 1 glass of wine is a "drink"):</label>
+                      <input id="drinks" type="number"></input>
+                      <br/>
+                      <label id="weightLabel">Please enter your weight in pounds (lbs):</label>
+                      <input id="weight" name="weight" type="number"></input>
+                      <br/>
+                      <label id="timeLabel">(Optional) Please enter the time since the last drink was consumed in hours:</label>
+                      <input id="time" name="time" step="any" type="number"></input>
+                      <br/>
+                      <input id="submit" type="submit" value="What is my BAC?"></td>
+                      <input type="reset" value="Reset form"></td>
+                  </form>
+                </div>
+                <textarea id="resultsArea" value="" class="standard"></textarea>
+                <label id="bacRec"></label>
+              </div>
+              <div id="padding-right-block" class="results-padding-block"></div>
             </div>
-            <textarea id="resultsArea" value="" class="standard"></textarea>
-            <label id="bacRec"></label>
           </div>
           <div id="padding-right-block" class="results-padding-block"></div>
       </div>
