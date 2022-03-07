@@ -50,6 +50,14 @@ p.bold {
     float: right;
 }
 
+form {
+    overflow: hidden;
+  }
+  input {
+    float: right;
+    clear: both;
+  }
+
 .results-wrapper {
     height: 100%;
     width: 100%;
