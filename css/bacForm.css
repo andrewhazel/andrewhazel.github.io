@@ -61,6 +61,18 @@ p.bold {
     background-color: white;
 }
 
+.results-wrapper-form {
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+
+.results-form{
+    width: 50%;
+    display: inline-block;
+    background-color: white;
+}
+
 textarea.standard {
     border: 2px solid black;
 
