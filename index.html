@@ -40,20 +40,28 @@
                 <div id="formContent">
                   <h3>Providing the information below can determine your relative BAC:</h3>
                   <form id="bacForm" onsubmit="bacFormDriver();return false">
-                      <label id="sexLabel">Please choose a sex:</label>
-                      <select id="sex" name="sex">
+                      <div>
+                        <label id="sexLabel">Please choose a sex:</label>
+                        <select id="sex" name="sex">
                           <option id="sexMale" value="male">Male</option>
                           <option id="sexFemale" value="female">Female</option>
-                      </select>
+                        </select>
+                      </div>
                       <br/>
-                      <label id="drinkCountLabel">Enter the number of drinks consumed (e.g. 1 beer, 1 shot, 1 glass of wine is a "drink"):</label>
-                      <input id="drinks" type="number"></input>
+                      <div>
+                        <label id="drinkCountLabel">Enter the number of drinks consumed (e.g. 1 beer, 1 shot, 1 glass of wine is a "drink"):</label>
+                        <input id="drinks" type="number"></input>
+                      </div>
                       <br/>
-                      <label id="weightLabel">Please enter your weight in pounds (lbs):</label>
-                      <input id="weight" name="weight" type="number"></input>
+                      <div>
+                        <label id="weightLabel">Please enter your weight in pounds (lbs):</label>
+                        <input id="weight" name="weight" type="number"></input>
+                      </div>
                       <br/>
-                      <label id="timeLabel">(Optional) Please enter the time since the last drink was consumed in hours:</label>
-                      <input id="time" name="time" step="any" type="number"></input>
+                      <div>
+                        <label id="timeLabel">(Optional) Please enter the time since the last drink was consumed in hours:</label>
+                        <input id="time" name="time" step="any" type="number"></input>
+                      </div>
                       <br/>
                       <input class="form-buttons" id="submit" type="submit" value="What is my BAC?"></td>
                       <input class="form-buttons"  type="reset" value="Reset form"></td>
